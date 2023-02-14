@@ -68,7 +68,6 @@ def put_in_order(folder: pathlib.Path, category_by_extension: dict,
                 if extension not in unknown_extensions:
                     unknown_extensions.append(extension)
                 if new_stem == old_stem:
-                    print(new_stem)
                     continue
                 new_name, new_path = find_free_name(new_stem, folder, extension)
                 file.rename(new_path)
